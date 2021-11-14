@@ -120,12 +120,12 @@ body {
   display: flex;
   align-items: center;
 }
-.logo-header {
+.logo_header {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
-.logo-header_accent-logo {
+.logo_header_accent-logo {
   color: var(--logo-black-color);
 }
 /*Навигация */
@@ -136,7 +136,6 @@ body {
 }
 .navigation__list {
   display: flex;
-  /* position: relative; */
 }
 .navigation__item:not(:last-child) {
   margin-right: 50px;
@@ -205,11 +204,10 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-top: 0;
-  /* margin-bottom: 94px; */
   min-height: 600px;
   text-align: center;
 }
-.hero-overlay {
+.hero--overlay {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -225,7 +223,7 @@ body {
   background-size: cover;
   /* outline: 1px solid black */
 }
-.hero-title {
+.hero__title {
   width: 696px;
   min-height: 120px;
   margin: 0 auto 30px auto;
@@ -283,9 +281,6 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
 }
-/* .modal-close-icon {
-  fill: currentColor;
-} */
 .close-btn {
   position: absolute;
   top: 8px;
@@ -393,12 +388,6 @@ body {
 .modal-form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-/* .form-field-checkbox {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-} */
 .modal-form-checkbox-label {
   display: flex;
   justify-content: center;
@@ -424,7 +413,6 @@ body {
   border: none;
   background-image: url(../images/icon-check.svg);
 }
-
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
   outline: 1px solid var(--accent-color);
 }
@@ -478,7 +466,7 @@ body {
   padding-bottom: 94px;
 }
 .work-title,
-.team-title,
+.team__title,
 .clients-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -509,15 +497,7 @@ body {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-/* .work-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
 .work-title-background {
-  /* padding-top: 27px;
-  padding-bottom: 27px; */
-
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -531,12 +511,12 @@ body {
 
   background-color: var(--secondary-bg-color);
 }
-.menu-team {
+.team__menu {
   display: flex;
   margin-left: -30px;
   margin-bottom: -30px;
 }
-.team-item {
+.team__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
@@ -546,36 +526,44 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-item-card {
+.team__member {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* .card-image {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
+.team__heading {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.team__position {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--primary-text-color);
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
 /* Блок соцсетей */
 .social-menu {
   display: flex;
   justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
 }
 .team-social-menu {
-  display: flex;
   justify-content: center;
   margin: 0px;
   padding: 0px;
 }
-.social-item {
+.social-menu__item {
   width: 44px;
   height: 44px;
 }
-.social-item:not(:last-child) {
+.social-menu__item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link {
+.social-menu__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -585,33 +573,17 @@ body {
   transition: fill 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
 }
-.team .social-icon {
-  fill: var(--border-client);
-}
-.social-link:hover,
-.social-link:focus {
+.social-menu__link:hover,
+.social-menu__link:focus {
   background-color: var(--accent-color);
   fill: var(--logo-bg-white-color);
 }
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-menu__link:hover .social-menu__icon,
+.social-menu__link:focus .social-menu__icon {
   fill: var(--logo-bg-white-color);
 }
-.team-heading {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: var(--title-text-color);
-}
-.team-text {
-  font-size: 16px;
-  line-height: 1.19;
-  color: var(--primary-text-color);
-  margin: 0;
-  margin-bottom: 16px;
-  text-align: center;
+.social-menu__icon {
+  fill: var(--border-client);
 }
 /* Наши клиенты */
 .clients {
@@ -787,7 +759,7 @@ body {
   color: var(--accent-color);
   margin-bottom: 20px;
 }
-.footer-logo_accent_logo {
+.footer-logo_accent-logo {
   color: var(--logo-bg-white-color);
 }
 .address {
