@@ -23,10 +23,10 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container container-header">
+      <div class="container header__container">
         <nav class="navigation">
-          <a class="logo logo_header" href="./index.html" lang="en">
-            Web<span class="logo_header_accent-logo">Studio</span>
+          <a class="logo header__logo" href="./index.html" lang="en">
+            Web<span class="header__logo--accent-color">Studio</span>
           </a>
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -34,8 +34,8 @@
                 >Студия
               </a>
             </li>
-            <li class="navigation__item current">
-              <a href="./portfolio.html" class="navigation__link current__link link"
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link navigation__link--current link"
                 >Портфолио</a
               >
             </li>
@@ -68,26 +68,26 @@
       <section class="portfolio">
         <div class="container">
           <ul class="filter list">
-            <li class="filter-item">
-              <button type="button" class="button button-primary">Все</button>
+            <li class="filter__item">
+              <button type="button" class="button button--primary">Все</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button button-secondary">
+            <li class="filter__item">
+              <button type="button" class="button button--secondary">
                 Веб-сайты
               </button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button button-secondary">
+            <li class="filter__item">
+              <button type="button" class="button button--secondary">
                 Приложения
               </button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button button-secondary">
+            <li class="filter__item">
+              <button type="button" class="button button--secondary">
                 Дизайн
               </button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button button-secondary">
+            <li class="filter__item">
+              <button type="button" class="button button--secondary">
                 Маркетинг
               </button>
             </li>
@@ -409,7 +409,7 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe-footer">
+        <div class="subscribe">
           <p class="subscribe__title">Подпишитесь на рассылку</p>
           <div class="subscribe__block">
             <form class="subscribe__label" name="e-mail">
@@ -420,7 +420,7 @@
                 placeholder="E-mail"
               />
               <span class="subscribe__field">
-                <button type="submit" class="button button_subscribe">
+                <button type="submit" class="button subscribe--button">
                   Подписаться
                 </button>
                 <span class="subscribe__icon"></span>

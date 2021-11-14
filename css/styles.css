@@ -116,16 +116,16 @@ body {
   border-bottom: 1px solid;
   border-color: var(--border-header);
 }
-.container-header {
+.header__container {
   display: flex;
   align-items: center;
 }
-.logo_header {
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
-.logo_header_accent-logo {
+.header__logo--accent-color {
   color: var(--logo-black-color);
 }
 /*Навигация */
@@ -142,11 +142,15 @@ body {
 }
 .navigation__link {
   position: relative;
+  /* &:hover,
+  &:focus {
+    color: var(--accent-color); */
 }
-.current {
+
+.navigation__link--current {
   color: var(--accent-color);
 }
-.current__link::after {
+.navigation__link--current::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -235,14 +239,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-button,
-.form-button,
-.subscribe-button {
+.hero--button,
+.form--button,
+.subscribe--button {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.hero-button:hover,
-.hero-button:focus {
+.hero--button:hover,
+.hero--button:focus {
   color: var(--logo-bg-white-color);
   background-color: var(--hero-but-hover);
 }
@@ -379,9 +383,7 @@ body {
   width: 100%;
   height: 120px;
   margin-top: 4px;
-  /* margin-bottom: 28px; */
   padding: 12px 16px;
-  /* color: rgba(117, 117, 117, 0.5); */
   resize: none;
   transition: border-color 250ms var(--timing-function);
 }
@@ -635,27 +637,27 @@ body {
   margin-bottom: 50px;
   list-style: none;
 }
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.button-primary,
-.button-secondary {
+.button--primary,
+.button--secondary {
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
-.button-primary:hover,
-.button-primary:focus {
+.button--primary:hover,
+.button--primary:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.button-secondary {
+.button--secondary {
   color: var(--title-text-color);
   background-color: var(--button-bg-color);
 }
-.button-secondary:hover,
-.button-secondary:focus {
+.button--secondary:hover,
+.button--secondary:focus {
   color: var(--logo-bg-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -748,7 +750,7 @@ body {
 .fotter-container__address {
   margin-right: 70px;
 }
-.footer-logo {
+.footer__logo {
   display: block;
   color: var(--accent-color);
   margin-bottom: 20px;

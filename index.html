@@ -23,14 +23,16 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container container-header">
+      <div class="container header__container">
         <nav class="navigation">
-          <a class="logo logo_header" href="./index.html" lang="en">
-            Web<span class="logo_header_accent-logo">Studio</span>
+          <a class="logo header__logo" href="./index.html" lang="en">
+            Web<span class="header__logo--accent-color">Studio</span>
           </a>
           <ul class="navigation__list list">
-            <li class="navigation__item current">
-              <a href="./index.html" class="navigation__link current__link link"
+            <li class="navigation__item">
+              <a
+                href="./index.html"
+                class="navigation__link navigation__link--current link"
                 >Студия
               </a>
             </li>
@@ -69,7 +71,7 @@
       <section class="hero hero--overlay">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="button hero-button">
+          <button data-modal-open type="button" class="button hero--button">
             Заказать услугу
           </button>
         </div>
@@ -179,7 +181,7 @@
                 <a href="" style="color: #2196f3">Условия договора</a>
               </label>
             </div>
-            <button type="submit" class="button form-button">Отправить</button>
+            <button type="submit" class="button form--button">Отправить</button>
           </form>
         </div>
       </div>
@@ -513,7 +515,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="fotter-container__address">
-          <a class="logo footer-logo" href="./index.html" lang="en">
+          <a class="logo footer__logo" href="./index.html" lang="en">
             Web<span class="footer-logo_accent-logo">Studio</span>
           </a>
           <address class="address">
@@ -546,28 +548,44 @@
           <ul class="social-menu list">
             <li class="social-menu__item">
               <a href="" class="social-menu__link social-menu__link_footer">
-                <svg class="social-menu__icon social-menu__icon_footer" width="20" height="20">
+                <svg
+                  class="social-menu__icon social-menu__icon_footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-menu__item">
               <a href="" class="social-menu__link social-menu__link_footer">
-                <svg class="social-menu__icon social-menu__icon_footer" width="20" height="20">
+                <svg
+                  class="social-menu__icon social-menu__icon_footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-menu__item">
               <a href="" class="social-menu__link social-menu__link_footer">
-                <svg class="social-menu__icon social-menu__icon_footer" width="24" height="24">
+                <svg
+                  class="social-menu__icon social-menu__icon_footer"
+                  width="24"
+                  height="24"
+                >
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-menu__item">
               <a href="" class="social-menu__link social-menu__link_footer">
-                <svg class="social-menu__icon social-menu__icon_footer" width="20" height="20">
+                <svg
+                  class="social-menu__icon social-menu__icon_footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
