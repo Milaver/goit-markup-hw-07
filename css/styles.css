@@ -716,7 +716,7 @@ body {
 }
 
 /* Примеры работ */
-.work-list {
+.work-set {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -725,17 +725,33 @@ body {
   transition: outline 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
 }
-.work-list-item {
+.work-set__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
   list-style: none;
 }
+.work-set__link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms var(--timing-function);
+}
+.work-set__link:hover .work-portfolio__overlay,
+.work-set__link:focus .work-portfolio__overlay {
+  transform: translateY(-100%);
+  visibility: visible;
+  pointer-events: auto;
+}
+.work-set__link:hover,
+.work-set__link:focus {
+  box-shadow: var(--portfolio-list-item-shadow);
+  outline: 1px solid #eeeeee;
+}
 .work-list-thumb {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.work-portfolio__overlay {
   display: flex;
   position: absolute;
   top: 100%;
@@ -749,49 +765,29 @@ body {
   transition: transform 250ms var(--timing-function),
     visibility 250ms var(--timing-function);
 }
-.work-list-link {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow 250ms var(--timing-function);
+.work-portfolio__overlay_text {
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--logo-bg-white-color);
 }
-.work-list-link:hover .overlay,
-.work-list-link:focus .overlay {
-  transform: translateY(-100%);
-  visibility: visible;
-  pointer-events: auto;
+.work-portfolio__meta {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
-.work-list-link:hover,
-.work-list-link:focus {
-  box-shadow: var(--portfolio-list-item-shadow);
-  outline: 1px solid #eeeeee;
-}
-/* .work-portfolio-image {
-  display: block;
-  width: 100%;
-} */
-.title-portfolio {
+.work-portfolio__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.text-portfolio-overlay {
-  padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--logo-bg-white-color);
-}
-.text-portfolio {
+.work-portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
-}
-.description-card-wrapper {
-  padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 /* Footer */
 .footer {
@@ -803,7 +799,6 @@ body {
   display: flex;
   align-items: baseline;
 }
-
 .address-container {
   margin-right: 70px;
 }
