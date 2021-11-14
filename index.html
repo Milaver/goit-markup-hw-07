@@ -23,30 +23,30 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="navigation container">
-        <nav class="header-nav">
+      <div class="container container-header">
+        <nav class="header__nav">
           <a class="logo logo-header" href="./index.html" lang="en">
-            Web<span class="accent-logo">Studio</span>
+            Web<span class="logo-header__accent--logo">Studio</span>
           </a>
-          <ul class="site-nav list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link current link">Студия </a>
+          <ul class="header__site-nav list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link current link">Студия </a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link link">Портфолио</a>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link link">Портфолио</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link link">Контакты</a>
+            <li class="header__item">
+              <a href="" class="header__link link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-nav contacts-nav-menu">
-          <li class="contacts-item link">
+        <ul class="header__contacts contacts-nav-menu">
+          <li class="header__contacts-item link">
             <a
               href="mailto:info@devstudio.com"
-              class="contacts-link contacts-logo-list"
+              class="header__contacts-link contacts-logo-list"
             >
-              <svg class="header-icon" width="16" height="12">
+              <svg class="header__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-leter"></use>
               </svg>
               info@devstudio.com</a
@@ -55,9 +55,9 @@
           <li class="contacts-item link">
             <a
               href="tel:+380961111111"
-              class="contacts-link contacts-logo-phone"
+              class="header__contacts-link contacts-logo-phone"
             >
-              <svg class="header-icon" width="10" height="16">
+              <svg class="header__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
@@ -87,8 +87,10 @@
           </button>
           <!-- <div class="form-box"> -->
           <p class="form-text-title">Оставьте свои данные, мы вам перезвоним</p>
-          <form <div class="form-field search-form">
-            class="form-box " action="git" name="form-data" autocomplete="on"= >
+          <form class="form-box " 
+          action="git" 
+          name="form-data" 
+          autocomplete="on"= >
             <div class="form-field search-form__content">
               <label class="modal-label search-form__label"
                 >Имя

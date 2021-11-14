@@ -34,13 +34,12 @@ ul {
 img {
   display: block;
   max-width: 100%;
-
 }
 body {
   margin: 0 auto;
-  font-family: Roboto, sans-serif;
   padding-top: 80px;
 
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -83,14 +82,14 @@ body {
 }
 /* Шапка сайта */
 .logo {
-  color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  color: var(--accent-color);
 }
-.accent-logo {
+.logo-header__accent--logo {
   color: var(--logo-black-color);
 }
 .footer .accent-logo {
@@ -107,12 +106,12 @@ body {
   border-bottom: 1px solid;
   border-color: var(--border-header);
 }
-.navigation {
+.container-header {
   display: flex;
   align-items: center;
 }
 /*Навигация */
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -122,15 +121,15 @@ body {
   padding-bottom: 25px;
   margin-right: 93px;
 }
-.site-nav {
+.header__site-nav {
   display: flex;
   position: relative;
 }
-.site-nav .nav-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-link,
-.contacts-link {
+.header__link,
+.header__contacts {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -144,41 +143,41 @@ body {
   box-shadow: 0 0 5px solid currentColor; */
   transition: color 250ms var(--timing-function);
 }
-.nav-link {
+.header__link {
   position: relative;
 }
 
-.contacts-nav,
-.contacts-link {
+
+.header__contacts-link {
   display: inline-flex;
   align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
   list-style: none;
 }
-.header-icon {
+.header__icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
   vertical-align: middle;
   transition: fill 250ms var(--timing-function);
 }
-.contacts-link:hover .header-icon,
-.contacts-link:focus .header-icon {
+.header__contacts-link:hover .header__icon,
+.header__contacts-link:focus .header__icon {
   fill: var(--accent-color);
 }
 .contacts-nav-menu {
   display: flex;
 }
-.contacts-nav-menu .contacts-item:not(:last-child) {
+.header__contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 .current {
   color: var(--accent-color);
 }
-.nav-link.current::after {
+.header__link.current::after {
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -3px;
   content: '';
   width: 100%;
   height: 4px;
