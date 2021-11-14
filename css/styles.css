@@ -55,10 +55,10 @@ body {
 /* outline: 2px solid tomato; */
 
 /* hover focus */
-.contacts-link:hover,
-.contacts-link:focus,
-.nav-link:hover,
-.nav-link:focus,
+.navigation__link:hover,
+.navigation__link:focus,
+.contacts__link:hover,
+.contacts__link:focus,
 .link-map:hover,
 .link-map:focus,
 .footer-link:hover,
@@ -80,7 +80,6 @@ body {
 .link {
   text-decoration: none;
 }
-/* Шапка сайта */
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -89,12 +88,7 @@ body {
   text-decoration: none;
   color: var(--accent-color);
 }
-.logo-header__accent--logo {
-  color: var(--logo-black-color);
-}
-.footer .accent-logo {
-  color: var(--logo-bg-white-color);
-}
+/* Шапка сайта */
 .header {
   position: fixed;
   width: 100%;
@@ -111,7 +105,7 @@ body {
   align-items: center;
 }
 /*Навигация */
-.header__nav {
+.navigation {
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -121,16 +115,35 @@ body {
   padding-bottom: 25px;
   margin-right: 93px;
 }
-.header__site-nav {
+.logo-header_accent_logo {
+  color: var(--logo-black-color);
+}
+.navigation__list {
   display: flex;
   position: relative;
 }
-.header__item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
-.header__link,
-.header__contacts {
+.navigation__link {
+  position: relative;
+}
+.current {
+  color: var(--accent-color);
+}
+.navigation__link.current::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
   display: block;
+  border-radius: 2px;
+}
+.navigation__link,
+.contacts__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -139,51 +152,30 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  /* border: 5px solid currentColor;
-  box-shadow: 0 0 5px solid currentColor; */
   transition: color 250ms var(--timing-function);
 }
-.header__link {
-  position: relative;
+/* Контакты */
+.contacts {
+  display: flex;
 }
-
-
-.header__contacts-link {
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts__link {
   display: inline-flex;
   align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
-  list-style: none;
 }
-.header__icon {
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+  fill: var(--accent-color);
+}
+.contacts__icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
   vertical-align: middle;
   transition: fill 250ms var(--timing-function);
-}
-.header__contacts-link:hover .header__icon,
-.header__contacts-link:focus .header__icon {
-  fill: var(--accent-color);
-}
-.contacts-nav-menu {
-  display: flex;
-}
-.header__contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-.current {
-  color: var(--accent-color);
-}
-.header__link.current::after {
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  display: block;
-  border-radius: 2px;
 }
 /*Герой*/
 .hero,
@@ -822,6 +814,9 @@ body {
   display: block;
   color: var(--accent-color);
   margin-bottom: 20px;
+}
+.footer-logo_accent_logo {
+  color: var(--logo-bg-white-color);
 }
 .address {
   font-style: normal;
