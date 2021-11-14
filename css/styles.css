@@ -420,25 +420,22 @@ body {
   align-self: center;
 }
 /*Наши преимущества*/
-.list,
-.team,
-.filter,
-.work-list {
-  list-style: none;
-}
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.features-menu {
+.features__menu {
   display: flex;
   justify-content: center;
   padding: 0;
 }
-.features-item {
+.features__item {
   width: 270px;
 }
-.features-icon {
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+.features__icon {
   display: flex;
   height: 120px;
   margin-bottom: 30px;
@@ -447,17 +444,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.features-menu .features-item:not(:last-child) {
-  margin-right: 30px;
-}
-.text-title {
+.features__title {
   margin-bottom: 10px;
 
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
 }
-.text-submit {
+.features__submit {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
@@ -465,7 +459,7 @@ body {
 .work {
   padding-bottom: 94px;
 }
-.work-title,
+.work__title,
 .team__title,
 .clients__title {
   margin-bottom: 50px;
@@ -474,20 +468,20 @@ body {
   line-height: 1.17;
   text-align: center;
 }
-.work-menu {
+.image-set {
   display: flex;
   text-align: center;
   margin: 0px -30px 0px 0px;
   padding: 0px;
 }
-.work-menu .work-menu-item:not(:last-child) {
-  margin-right: 30px;
-}
-.work-menu-item {
+.image-set__item {
   position: relative;
   z-index: -1;
 }
-.work-image-title {
+.image-set__item:not(:last-child) {
+  margin-right: 30px;
+}
+.image-set__title {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -497,7 +491,7 @@ body {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.work-title-background {
+.image-set__background {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
