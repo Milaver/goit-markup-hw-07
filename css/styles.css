@@ -50,6 +50,10 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* hover focus */
 .navigation__link:hover,
 .navigation__link:focus,
@@ -142,11 +146,7 @@ body {
 }
 .navigation__link {
   position: relative;
-  /* &:hover,
-  &:focus {
-    color: var(--accent-color); */
 }
-
 .navigation__link--current {
   color: var(--accent-color);
 }
@@ -161,8 +161,7 @@ body {
   display: block;
   border-radius: 2px;
 }
-.navigation__link,
-.contacts__link {
+.text-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -422,10 +421,7 @@ body {
   align-self: center;
 }
 /*Наши преимущества*/
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+.features {padding-bottom: 0;}
 .features__menu {
   display: flex;
   justify-content: center;
@@ -458,12 +454,7 @@ body {
   color: var(--primary-text-color);
 }
 /*Чем мы занимаемся*/
-.work {
-  padding-bottom: 94px;
-}
-.work__title,
-.team__title,
-.clients__title {
+.section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -502,9 +493,6 @@ body {
 }
 /*Наша команда*/
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--secondary-bg-color);
 }
 .team__menu {
@@ -582,10 +570,6 @@ body {
   fill: var(--border-client);
 }
 /* Наши клиенты */
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .clients__title {
   margin-bottom: 50px;
 }
@@ -627,10 +611,6 @@ body {
   fill: var(--accent-color);
 }
 /*Портфолио*/
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .filter {
   display: flex;
   justify-content: center;
