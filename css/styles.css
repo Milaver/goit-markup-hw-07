@@ -1,5 +1,5 @@
 /*Палитра основных цветов*/
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -53,7 +53,7 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 /* hover focus */
 .navigation__link:hover,
 .navigation__link:focus,
@@ -65,7 +65,7 @@ body {
 .address__link:focus {
   color: var(--accent-color);
 }
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -76,10 +76,10 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.link {
+} */
+/* .link {
   text-decoration: none;
-}
+} */
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -89,7 +89,7 @@ body {
   color: var(--accent-color);
 }
 /* Кнопки */
-.button {
+/* .button {
   display: inline-block;
   font-family: 'Roboto';
   font-weight: 700;
@@ -107,7 +107,7 @@ body {
   background-color: var(--accent-color);
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
-}
+} */
 /* Шапка сайта */
 .header {
   position: fixed;
@@ -147,7 +147,7 @@ body {
 .navigation__link {
   position: relative;
 }
-.navigation__link--current {
+/* .navigation__link--current {
   color: var(--accent-color);
 }
 .navigation__link--current::after {
@@ -160,8 +160,8 @@ body {
   background-color: var(--accent-color);
   display: block;
   border-radius: 2px;
-}
-.text-link {
+} */
+/* .text-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -172,7 +172,7 @@ body {
   letter-spacing: 0.02em;
   color: currentColor;
   transition: color 250ms var(--timing-function);
-}
+} */
 /* Контакты */
 .contacts {
   display: flex;
@@ -238,7 +238,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero--button,
+/* .hero--button,
 .form--button,
 .subscribe--button {
   padding: 10px 32px;
@@ -248,7 +248,7 @@ body {
 .hero--button:focus {
   color: var(--logo-bg-white-color);
   background-color: var(--hero-but-hover);
-}
+} */
 /* Модальное окно */
 .backdrop {
   position: fixed;
@@ -324,7 +324,6 @@ body {
 }
 .form-field-textarea {
   margin-bottom: 20px;
-  /* outline: 1px solid tomato; */
 }
 .modal-label {
   font-family: inherit;
@@ -421,7 +420,9 @@ body {
   align-self: center;
 }
 /*Наши преимущества*/
-.features {padding-bottom: 0;}
+.features {
+  padding-bottom: 0;
+}
 .features__menu {
   display: flex;
   justify-content: center;
@@ -454,13 +455,13 @@ body {
   color: var(--primary-text-color);
 }
 /*Чем мы занимаемся*/
-.section-title {
+/* .section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
+} */
 .image-set {
   display: flex;
   text-align: center;
@@ -531,7 +532,7 @@ body {
   text-align: center;
 }
 /* Блок соцсетей */
-.social-menu {
+/* .social-menu {
   display: flex;
   justify-content: space-between;
 }
@@ -568,7 +569,7 @@ body {
 }
 .social-menu__icon {
   fill: var(--border-client);
-}
+} */
 /* Наши клиенты */
 .clients__title {
   margin-bottom: 50px;
@@ -620,7 +621,7 @@ body {
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.button--primary,
+/* .button--primary,
 .button--secondary {
   padding: 6px 22px;
   font-weight: 500;
@@ -642,7 +643,7 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 /* Примеры работ */
 .work-set {
   display: flex;
@@ -727,7 +728,7 @@ body {
   display: flex;
   align-items: baseline;
 }
-.fotter-container__address {
+.footter__address {
   margin-right: 70px;
 }
 .footer__logo {
@@ -735,7 +736,7 @@ body {
   color: var(--accent-color);
   margin-bottom: 20px;
 }
-.footer-logo_accent-logo {
+.footer__logo--accent-logo {
   color: var(--logo-bg-white-color);
 }
 .address {
@@ -751,17 +752,24 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
 }
+.address__link:hover,
+.address__link:focus {
+  color: var(--accent-color);
+}
 .address__link_map {
   color: var(--logo-bg-white-color);
 }
-.appeal {
+.address__link_map:hover,
+.address__link_map:focus {
+  color: var(--accent-color);
+}
+.footer__social-container {
   margin-right: 93px;
   display: block;
   width: 206px;
   height: 80px;
 }
-.appeal__title,
-.subscribe__title {
+.footer__title {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 14px;
