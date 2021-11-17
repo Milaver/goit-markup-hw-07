@@ -103,15 +103,15 @@
     border: 1px solid var(--primary-text-color);
     border-radius: 2px;
   }
+  .checkbox__input:checked + &::before {
+    border: none;
+    background-image: url(../images/icon-check.svg);
+  }
+  .checkbox__input:focus + &::before {
+    outline: 1px solid var(--accent-color);
+  }
 }
 
-.checkbox__input:checked + .checkbox__label::before {
-  border: none;
-  background-image: url(../images/icon-check.svg);
-}
-.checkbox__input:focus + .checkbox__label::before {
-  outline: 1px solid var(--accent-color);
-}
 .form--button {
   align-self: center;
 }

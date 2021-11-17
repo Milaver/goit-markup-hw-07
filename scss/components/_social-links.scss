@@ -12,8 +12,10 @@
   width: 44px;
   height: 44px;
 }
-.social-menu__item:not(:last-child) {
-  margin-right: 10px;
+.social-menu__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social-menu__link {
   width: 100%;

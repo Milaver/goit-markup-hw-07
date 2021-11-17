@@ -1,5 +1,7 @@
 /*Наши преимущества*/
-.features {padding-bottom: 0;}
+.features {
+  padding-bottom: 0;
+}
 .features__menu {
   display: flex;
   justify-content: center;
@@ -8,8 +10,10 @@
 .features__item {
   width: 270px;
 }
-.features__item:not(:last-child) {
-  margin-right: 30px;
+.features__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .features__icon {
   display: flex;

@@ -24,8 +24,10 @@
   font-size: 14px;
   line-height: 1.71;
 }
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 .address__link {
   text-decoration: none;

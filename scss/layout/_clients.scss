@@ -28,8 +28,10 @@
     border-color: var(--accent-color);
   }
 }
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .clients__icon {
   fill: var(--border-client);
